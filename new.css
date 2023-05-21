@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+body {
+  background-color: #131316;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+.gallery {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.divide{
+    text-align: center;
+    margin-top: 400px;
+    margin-bottom: 500px;
+    min-height: 10vh;
+    font-size: 80px
+}
+
+.div {
+  position: center;
+  transition: width 0.9s;
+  overflow: hidden;
+  display: flex;
+  height: 800px;
+  width: 300px;
+  justify-content: center;
+  align-items: center;
+  margin: 20;
+  border-radius: 7px;
+}
+
+.div img {
+  width: 500%;
+  height: 500%;
+  object-fit: cover;
+  transition: transform 0.5s;
+  opacity: 1;
+}
+
+.div:hover {
+  width: 500x;
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
+}
+
+.div:hover img {
+  transform: scale(1);
+}  
+
+.div:hover .img-text {
+  transform: translateY(0);
+}
+
+.image {
+  width: 800px; 
+  height: 400px;
+  margin: 5px;
+  border-radius: 20px;
+  position: relative;
+  transition: width 0.9s;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.image img {
+  width: 200%;
+  height: 100%;
+  object-fit:cover;
+  transition: transform 0.5s;
+  justify-content: center;
+}
+
+.image:hover {
+  width: 700px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.image:hover img {
+  transform: scale(0.8);
+}  
+
+.image:hover .img-text {
+  transform: translateY(0);
+}
+
+.image-another {
+  width: 800px; 
+  height: 1000px;
+  margin: 50px;
+  border-radius: 10px;
+  position: relative;
+  transition: width 0.9s;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.image-another img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.image-another:hover {
+  width: 800x;
+  cursor: pointer;
+  text-align: center;
+}
+
+.image-another:hover img {
+  transform: scale(1.1);
+}  
+
+.image-another:hover .img-text {
+  transform: translateY(0);
+}
+
+html, body {
+  height: 100%;
+  overflow: auto;
+}
+
+
+
+
+.contained{
+    height: 100vh;
+    width: 100vh;
+    background: linear-gradient(#800080,#a96fce#af69ee,#2b1055);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+}
+
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+

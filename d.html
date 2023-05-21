@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> D </title>
+        <link rel="stylesheet" type="text/css" href="d.css">
+        <script defer src="z.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    </head>
+    <body>
+        <section>
+            <img src="img/bg.png" id="bg">
+            <img src="img/moon1.png" id="moon">
+            <img src="img/star.png" id="star">
+            <img src="img/cloud.png" id="cloud">
+            <img src="img/mount2.png" id="mount2">
+            <img src="img/mount1.png" id="mount1">
+            <img src="img/front1.png" id="front1">
+            <h2 id="text">The moon is beautiful, isn't it?</h2>
+            <a href="#sec" id="btn">Continue</a>
+            <img src="img/trees.png" id="trees">
+        </section>
+
+        <div class="sec" id="sec">
+
+            <div class="div" data-aos="fade-right">
+                <h2>My Dear Valentine</h2>
+            </div>
+
+            <div class="div" data-aos="fade-left">
+                It's not Valentine's day but my love for you grows every single day.
+                Everyday is Valentine's day with you.
+            </div>
+
+            <div class="div" data-aos="fade-left">
+                You are strong and ambitious.
+            </div>
+
+            <div class="div" data-aos="fade-left">
+                You are caring and kind.
+            </div>
+
+            <div class="div" data-aos="fade-left">
+                You are beautiful and smart.
+            </div>
+
+            <div class="div" data-aos="fade-left">  
+                You are my love.
+            </div>
+
+            <div class="div" data-aos="fade-left">
+                You are doing great.
+                Don't ever give up.
+                Continue to grow.
+            </div>
+
+            <div class="div" data-aos="fade-left">
+                I love everything about you, don't ever change.
+            </div>
+
+            <div class="div" data-aos="fade-left">
+                I will always respect, support, and encourage you with everything you do.
+            </div>
+
+            <div class="div" data-aos="fade-left">
+                Don't be afraid to fail or make mistakes, 
+                I will embrace your flaws as how you accepted me back into your life.
+            </div>
+
+            <div class="div" data-aos="fade-left">
+                Nobody's perfect but you are perfect for me.
+            </div>
+
+            <div class="div" data-aos="fade-left">
+                I will always be here with you through all your ups and downs.
+            </div>
+
+            <div class="div" data-aos="fade-left">
+                Let me be the shoulder you lean on. 
+            </div>
+
+            <div class="div" data-aos="fade-left">
+                Please, hold on to me and never let go.
+            </div>
+
+            <div class="div" data-aos="fade-left">
+                I love you.
+            </div>
+
+            <div class="button-container">
+        <button class="button" onclick="window.location.href='new.html'">OUR GALLERY</button>
+        </div>
+
+        </div>image.png
+
+        <script>
+            let star = document.getElementById('star');
+            let moon = document.getElementById('moon');
+            let cloud = document.getElementById('cloud');
+            let bg = document.getElementById('bg');
+            let mount1 = document.getElementById('mount1');
+            let mount2 = document.getElementById('mount2');
+            let text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+            let trees = document.getElementById('trees');
+            let header = document.querySelector('header');
+
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                star.style.left = value * 0.25 + 'px';
+                moon.style.top = value * 1.05 + 'px';   
+                cloud.style.top = value * 1.05 + 'px';   
+                mount1.style.left = value * 1.05 + 'px';
+                mount2.style.left = value * -1.05 + 'px';
+                text.style.marginRight = value * 3 + 'px';
+                text.style.marginTop = value * 1.5 + 'px';
+                btn.style.marginTop = value * 1.5 + 'px';
+                header.style.top = value * 0.5 + 'px';
+                trees.style.top = value * 0.70 + 'px';
+
+            })
+        </script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script> 
+
+    </body>
+</html>
